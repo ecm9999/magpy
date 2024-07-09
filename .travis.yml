@@ -11,7 +11,7 @@ jobs:
         - tar xf cdf*-dist-all.tar.gz
         - cd cdf*dist
         - make OS=linux ENV=gnu all
-        - sudo make INSTALLDIR=/usr/local/cdf install
+        - sudo make INSTALLDIR=/usr/local/cdf install 
         - cd ..
         - pip install cycler==0.10.0
     - name: "Python 3.7 on Xenial Linux"
